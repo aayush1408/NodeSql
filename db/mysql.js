@@ -2,9 +2,8 @@ const mysql = require('mysql');
 
 const db = mysql.createConnection({
     host:'localhost',
-    user:'root'
-
-
+    user:'root',
+    database:'toystore'
 });
 db.connect((err)=>{
     if(err) throw err;
