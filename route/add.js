@@ -8,7 +8,7 @@ router.post('/toy',(req,res)=>{
     let query = db.query(sql,toys,(err,result)=>{
         if(err) throw err;
         console.log(result);
-        res.send('Toy added');
+        res.render(form);
     });     
 
 });
